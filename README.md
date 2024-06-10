@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
 
-  <h3 align="center">Black W's Portfolio with Next.js</h3>
+  <h3 align="center">Welcome to Black W's Portfolio with Next.js</h3>
 
 </div>
 
