@@ -1,4 +1,10 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaLocationArrow,
+  FaSkype,
+  FaTelegram,
+} from "react-icons/fa6";
 import Link from "next/link";
 import Image from "next/image"; // Import the Image component from next/image
 import { devil, socialMedia } from "@/data";
@@ -29,34 +35,31 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="https://www.linkedin.com/in/" target="blank">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
+
+        <MagicButton
+          title="Let's get in touch"
+          icon={<FaLocationArrow />}
+          position="right"
+          handleClick={() => {
+            window.open("mailto:blackwang104@gmail.com");
+          }}
+        />
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:flex-row-reverse flex-col justify-between items-center">
+        <div className="social-media">
+          <Link href="www.linkedin.com/in/aleksey-mosyaev-b74459313/">
+            <FaLinkedin />
+          </Link>
+          <Link href="https://github.com/black-2U/">
+            <FaGithub />
+          </Link>
+          <Link href="https://t.me/Black_2U">
+            <FaTelegram />
+          </Link>
+        </div>
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © {new Date().getFullYear()} {devil}
         </p>
-
-        <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
-            <Link href={info.link} key={info.id}>
-              <div className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 text-white">
-                <Image
-                  src={info.img}
-                  alt="icons"
-                  width={20}
-                  height={20}
-                  className="text-white"
-                />
-              </div>
-            </Link>
-          ))}
-        </div>
       </div>
     </footer>
   );

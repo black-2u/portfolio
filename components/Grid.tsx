@@ -1,13 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
-import {
-  FaLocationArrow,
-  FaLinkedin,
-  FaGithub,
-  FaSquareXTwitter,
-  FaLink,
-} from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaSkype, FaTelegram } from "react-icons/fa6";
 
 import { Spotlight } from "./ui/Spotlight";
 import avatar from "../public/personal/avatar-1.png";
@@ -81,6 +75,9 @@ const Grid = () => {
             </Link>
             <Link href="https://github.com/black-2U/">
               <FaGithub />
+            </Link>
+            <Link href="https://t.me/Black_2U">
+              <FaTelegram />
             </Link>
 
             {/* Gmail, Telegram */}

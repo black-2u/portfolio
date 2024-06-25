@@ -28,7 +28,7 @@ const services = [
 
 const Approach = () => {
   return (
-    <div className="py-20 w-full mt-[3rem]" id="Services">
+    <div className="py-40 w-full mt-[3rem]" id="Services">
       <h1 className="text-4xl font-bold text-center mb-12">
         My <span className="text-purple">Services</span>
       </h1>

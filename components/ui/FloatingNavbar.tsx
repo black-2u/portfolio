@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export const FloatingNav = ({
   navItems,
@@ -61,7 +62,7 @@ export const FloatingNav = ({
           // change rounded-full to rounded-lg
           // remove dark:border-white/[0.2] dark:bg-black bg-white border-transparent
           // change  pr-2 pl-8 py-2 to px-10 py-5
-          "flex flex-col md:flex-row md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-5 md:top-10 inset-x-0 mx-5 md:mx-auto px-0 md:px-10 py-2 md:py-5 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-y-2 md:space-y-0 md:space-x-5",
+          "flex flex-col md:flex-row max-w-7xl w-full lg:min-w-fit fixed z-[5000] top-5 md:top-10 inset-x-0 mx-5 md:mx-auto px-10 py-2 md:py-5 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-between space-y-2 md:space-y-0 md:space-x-5",
           className
         )}
         style={{
@@ -71,22 +72,28 @@ export const FloatingNav = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        {navItems.map((navItem: any, idx: number) => (
-          <Link
-            key={`link=${idx}`}
-            href={navItem.link}
-            className={cn(
-              "relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
-            )}
-          >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            {/* add !cursor-pointer */}
-            {/* remove hidden sm:block for the mobile responsive */}
-            <span className="block md:block-inline text-center text-sm !cursor-pointer">
-              {navItem.name}
-            </span>
-          </Link>
-        ))}
+        <div className="logo -my-10 ">
+          <Image src="/logo.png" alt="logo" width={50} height={50} />
+        </div>
+        <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-5">
+          {navItems.map((navItem: any, idx: number) => (
+            <Link
+              key={`link=${idx}`}
+              href={navItem.link}
+              className={cn(
+                "relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              )}
+            >
+              <span className="block sm:hidden">{navItem.icon}</span>
+              {/* add !cursor-pointer */}
+              {/* remove hidden sm:block for the mobile responsive */}
+              <span className="block md:block-inline text-center !cursor-pointer">
+                {navItem.name}
+              </span>
+            </Link>
+          ))}
+        </div>
+        <div></div>
         {/* remove this login btn */}
         {/* <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
           <span>Login</span>
