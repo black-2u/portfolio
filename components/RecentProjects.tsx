@@ -21,12 +21,11 @@ const RecentProjects = () => {
             <a
               href={item.link}
               target="_blank"
-              rel="noopener noreferrer"
               className="rounded-[14px] border-2 border-[#d1abf7] p-[11px] card-content"
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                  className="relative w-full h-full overflow-hidden flex items-start lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
                   <Image
@@ -39,7 +38,7 @@ const RecentProjects = () => {
                 <Image
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute top-0 left-0 w-full h-full object-cover"
                   width={500}
                   height={300}
                 />

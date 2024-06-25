@@ -7,22 +7,22 @@ const services = [
   {
     title: "Website Development",
     description:
-      "Building Website from scratch with a focus on Mobile Responsiveness for all devices. Specializes in creating modern, professional, and sleek UI designs, ensuring pixel-perfect precision to captivate your audience and enhance user experience.",
+      "Building websites from scratch with a focus on mobile responsiveness for all devices. Specializes in creating modern, professional, and sleek UI designs, ensuring pixel-perfect precision to captivate your audience and enhance user experience.",
   },
   {
     title: "Build Website For an Agency",
     description:
-      "Let's Build Professional website for your Business🔥 With Moder UI to Enhance your User Experience. Pixel Perfect UI according your Business. So, Let's work together in Modern Professional Way",
+      "Let's build professional website for your business🔥 with modern UI to enhance your user experience. Pixel perfect UI according your business. So, let's work together in modern professional way",
   },
   {
     title: "Website Designing in Figma",
     description:
-      "Let's Create Professional, Modern Websites. Modern UI to Enhance you User Experience, Best UI of Websites for your Professional Business. Pixel Perfect Enhance your User Experience.",
+      "Let's create professional, modern websites. Modern UI to enhance you user experience, Best UI of websites for your professional business. Pixel perfect enhance your user experience.",
   },
   {
     title: "Web Application Development",
     description:
-      "IF you want to build Full stack Web Application with User Authentication and Payment Gateway and All Features that You can Imagine. with Pixel-Perfect UI according your Business!",
+      "If you want to build full stack web application with user authentication, payment gateway, all Features that you can imagine, I can do it with pixel-perfect UI according your business!",
   },
 ];
 
@@ -58,11 +58,11 @@ const Approach = () => {
           </Button>
         ))}
       </div>
-      <Image
+      {/* <Image
         src={BannerImg}
         className="w-[970px] mx-auto mt-[158px] rounded-md"
         alt="image"
-      />
+      /> */}
     </div>
   );
 };

@@ -36,8 +36,9 @@ const Hero = () => {
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Let&apos;s Explore Web Development in Depth with {devilS}
           </p>
+          {/* heading */}
           <TextGenerateEffect
-            words="Your success is my success🤝, and I'm dedicated to delivering results that elevate your business.🤝"
+            words="Your success is my pleasure🤝, and I'm dedicated to delivering results that elevate your business.🤝"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 

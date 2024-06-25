@@ -7,6 +7,10 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
+export const devilL = "Black Wang";
+export const devil = "Black W.";
+export const devilS = "Black";
+
 export const gridItems = [
   {
     id: 6,
@@ -23,69 +27,64 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Real Time Figma Clone",
-    des: "Build a Figma clone with real-world features like live collaboration through cursor chat, comments, reactions, and drawing designs (shapes, image upload) on the canvas using Next.js 14, Fabric.js, and Liveblocks.",
-    img: "/projects/figmabanner.jpg",
+    title: "WellCorner - HealthCare",
+    des: "Developed a React web app to provide healthcare information for cancer patients. Created functionalities to take simple and complex user surveys. Matched wireframes and used React and React Testing Library for unit tests.",
+    img: "/projects/wellCorner.png",
+    // techs: react, next, tailwind, ts
     iconLists: [
+      "/icons/react.svg",
       "/icons/next.svg",
-      "icons/tail.svg",
-      "/icons/ts.svg",
-      "/icons/liveblocks.jpeg",
+      "icons/tailwindcss.svg",
+      "/icons/typescript.svg",
     ],
-    link: "https://figma-clone-two-kappa.vercel.app/",
-    toptext: "Figma Clone",
+    link: "https://www.wellcorner.com/",
+    toptext: "HealthCare",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/projects/p2.svg",
+    title: "Feather - Rental",
+    des: "Developed a smart and tidy Landing page with Next.js. Used Tailwind CSS for styling and React for interactivity.",
+    img: "/projects/feather-landing.png",
+    // techs: next, ts, tailwind
     iconLists: [
+      "/icons/figma.png",
       "/icons/next.svg",
-      "/icons/tail.svg",
-      "/icons/ts.svg",
-      "/icons/stream.svg",
-      "/icons/c.svg",
+      "/icons/tailwindcss.svg",
+      "/icons/typescript.svg",
     ],
-    link: "https://zoom-umber.vercel.app/",
-    toptext: "Zoom Clone",
+    link: "https://livefeather.com/",
+    toptext: "Rental Website",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/projcets/p3.svg",
+    title: "Mymories -Sharing Images Without Losing Data",
+    des: "A service to share images easily with multiple people at an event without losing data, such as a party, wedding, or holiday. Users can also display live images on a screen. I conceived, designed, and developed the idea from scratch, including the React Native application, the React web front end, and the back end hosted via google cloud functions.",
+    img: "/projects/mymories-landing.png",
+    // techs: react, next, tailwind, ts, cloud
     iconLists: [
-      "/icons/re.svg",
-      "/icons/tail.svg",
-      "/icons/ts.svg",
-      "/icons/cloud.png",
-      "/icons/c.svg",
+      "/icons/react.svg",
+      "/icons/tailwindcss.svg",
+      "/icons/typescript.svg",
+      "/icons/cloud.svg",
     ],
-    link: "https://imaginify-new.vercel.app/",
-    toptext: "AI SaaS App",
+    link: "https://mymories.de",
+    toptext: "An App for Sharing Images Without Losing Data",
   },
   {
     id: 4,
-    title: "Ecommerce Website",
-    des: "I build complete Ecommerce Websie with User Authentication and Payment Pntegration included",
-    img: "/projects/ecoBanner.webp",
+    title: "E-commerce Website",
+    des: "As a part of the team, I developed new features for the upcoming Ford EV infotainment system. I also improved coding and testing practices.",
+    img: "/projects/greenCarReports-guides.PNG",
     iconLists: [
-      "/icons/re.svg",
-      "/icons/ts.svg",
-      "/icons/tail.svg",
-      "/icons/boos.png",
-      "/icons/scss.png",
-      "/icons/redu.png",
+      "/icons/react.svg",
+      "/icons/tailwindcss.svg",
+      "/icons/bootstrap.png",
+      "/icons/redux.png",
     ],
-    link: "https://rai-ecommerce.netlify.app/ ",
-    toptext: "Ecommerce Website",
+    link: "https://www.greencarreports.com/news/1128304_ford-mustang-mach-e",
+    toptext: "E-commerce Website",
   },
 ];
-
-export const devilL = "Black Wang";
-export const devil = "Black W.";
-export const devilS = "Black";
 
 export const testimonials = [
   {
@@ -94,7 +93,8 @@ export const testimonials = [
       devil +
       " was an outstanding experience. Their expertise in frontend development is evident in the high-quality, responsive code they deliver. They are reliable, communicative, and truly committed to meeting project deadlines. Highly recommend!",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    // title: "Director of AlphaStream Technologies",
+    title: "Client",
     imgURL: "/clients/clientOne.jpeg",
   },
   {
@@ -102,32 +102,32 @@ export const testimonials = [
       devilS +
       " brought our vision to life with exceptional attention to detail and a deep understanding of modern frontend technologies. Their professionalism and willingness to go the extra mile made the collaboration seamless. Looking forward to future projects together!",
     name: "Adrian Jaston",
-    title: "CEO of Lime Tech",
+    title: "Client",
     imgURL: "/clients/clientTwo.jpeg",
   },
   {
     quote:
       devilS +
       " is a phenomenal UI/UX designer. They transformed our initial ideas into an intuitive and visually stunning user interface. Their creativity and dedication to user experience were instrumental in making our project a success. Highly recommended!",
-    name: "sekosd luma",
-    title: "Founder of VLD lab",
-    imgURL: "/clients/clientThree.jpeg",
+    name: "Sekosda Luma",
+    title: "Client",
+    imgURL: "/clients/clientFour.jpeg",
   },
   {
     quote:
       "Collaborating with " +
       devilL +
       " was a pleasure. Their innovative design solutions and user-focused approach significantly enhanced our product's usability and appeal. They are highly skilled, communicative, and a true professional in every sense.",
-    name: "Jaston dona luma",
-    title: "Co Founder of Tech Lab",
-    imgURL: "/clients/clientFour.jpeg",
+    name: "Alexander",
+    title: "Founder/ CTO of AimTraction",
+    imgURL: "/clients/clientThree.jpeg",
   },
   {
     quote:
       devilS +
       " exceeded our expectations as a web developer. They delivered robust, scalable solutions and were always quick to address any challenges that arose. Their technical expertise and commitment to quality were evident throughout the project. Highly recommend their services!",
-    name: "Mosa laise Johnson",
-    title: "CEO of Labtech",
+    name: "Tomasz Rygulski",
+    title: "Co-founder of IDO Electronics NSG 4L",
     imgURL: "/clients/clientfive.jpeg",
   },
 ];
@@ -199,17 +199,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/socialMedia/git.svg",
-    link: "https://github.com/johndor917/",
+    img: "../public/socialMedia/git.svg",
+    link: "https://github.com/black-2U/",
   },
+  // {
+  //   id: 2,
+  //   img: "../public/socialMedia/link1.png",
+  //   link: "https://linktr.ee/",
+  // },
   {
     id: 2,
-    img: "/socialMedia/linkl.png",
-    link: "https://linktr.ee/",
-  },
-  {
-    id: 3,
-    img: "/socialMedia/link.svg",
+    img: "../public/socialMedia/link.svg",
     link: "https://www.linkedin.com/in/",
   },
 ];

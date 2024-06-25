@@ -64,7 +64,7 @@ body {
 }
 
 .home-image img {
-  width: 24vw;
+  width: 30vw;
   border-radius: 11%;
   animation: zoomIn 5s ease forwards, floatImage 4s ease-in-out infinite;
   animation-delay: 2s, 3s;

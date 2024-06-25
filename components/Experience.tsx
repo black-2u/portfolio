@@ -1,67 +1,72 @@
 import React from "react";
 import { Button } from "./ui/MovingBorders";
 import Image from "next/image";
-
-import HTMLlogo from "../public/icons/html.png";
-import CSSlogo from "../public/icons/cssLogo.png";
-import JSlogo from "../public/icons/js.png";
-import Pythonlogo from "../public/icons/python.png";
-import TypeScriptlogo from "../public/icons/ts.png";
-import SHADCNlogo from "../public/icons/shacnUI.png";
-import JQERYlogo from "../public/icons/jqury.png";
-import SASSlogo from "../public/icons/sass.png";
-import Framerlogo from "../public/icons/frammer.png";
-import GSAPlogo from "../public/icons/gsapicon.png";
-import NEXTlogo from "../public/icons/next.png";
-import Reactlogo from "../public/icons/re.svg";
-import Bootstraplogo from "../public/icons/boos.png";
-import Tailwindlogo from "../public/icons/tail.svg";
-import MaterialUIlogo from "../public/icons/mui.png";
-import VSCodeLogo from "../public/icons/vscode.png";
-import GitHubLogo from "../public/icons/github.png";
-import GitLogo from "../public/icons/git.png";
-import ChatGPTLogo from "../public/icons/chatgpt.jpg";
-import Figmalogo from "../public/icons/figma.png"; // Reusing ChatGPTLogo for Figma
+// langs
+import htmlLogo from "../public/icons/html.png";
+import cssLogo from "../public/icons/css.png";
+import jsLogo from "../public/icons/js.png";
+import tsLogo from "../public/icons/typescript.svg";
+import phpLogo from "../public/icons/php.svg";
+// libs
+import reactLogo from "../public/icons/react.svg";
+import jqueryLogo from "../public/icons/jquery.png";
+import nodeLogo from "../public/icons/node-js.svg";
+import sassLogo from "../public/icons/sass.png";
+import apiLogo from "../public/icons/api.svg";
+// frameworks
+import nextLogo from "../public/icons/next-js.svg";
+import bootstrapLogo from "../public/icons/bootstrap.png";
+import tailwindLogo from "../public/icons/tailwindcss.svg";
+import muiLogo from "../public/icons/mui.png";
+import reduxLogo from "../public/icons/redux.png";
+// platforms
+import vscodeLogo from "../public/icons/vscode.png";
+import githubLogo from "../public/icons/github.png";
+import gitLogo from "../public/icons/git.png";
+import chatGptLogo from "../public/icons/chatgpt.jpg";
+import figmaLogo from "../public/icons/figma.png";
+import vercelLogo from "../public/icons/vercel.svg";
 
 const skills = [
   {
-    category: "Programming Languages",
+    category: "Languages",
     items: [
-      { logo: HTMLlogo, name: "HTML" },
-      { logo: CSSlogo, name: "CSS" },
-      { logo: JSlogo, name: "JavaScript" },
-      { logo: Pythonlogo, name: "Python" },
-      { logo: TypeScriptlogo, name: "TypeScript" },
+      { logo: htmlLogo, name: "HTML" },
+      { logo: cssLogo, name: "CSS" },
+      { logo: jsLogo, name: "JavaScript" },
+      { logo: tsLogo, name: "TypeScript" },
+      { logo: phpLogo, name: "PHP" },
     ],
   },
   {
     category: "Libraries",
     items: [
-      { logo: SHADCNlogo, name: "SHADCN/UI" },
-      { logo: JQERYlogo, name: "JQuery" },
-      { logo: SASSlogo, name: "SASS" },
-      { logo: Framerlogo, name: "Framer Motion" },
-      { logo: GSAPlogo, name: "GSAP" },
+      { logo: reactLogo, name: "ReactJS" },
+      { logo: jqueryLogo, name: "JQuery" },
+      { logo: sassLogo, name: "SASS" },
+      { logo: nodeLogo, name: "NodeJS" },
+      { logo: apiLogo, name: "APIs" },
     ],
   },
   {
     category: "Frameworks",
     items: [
-      { logo: NEXTlogo, name: "NEXT.js" },
-      { logo: Reactlogo, name: "React" },
-      { logo: Bootstraplogo, name: "Bootstrap" },
-      { logo: Tailwindlogo, name: "Tailwind CSS" },
-      { logo: MaterialUIlogo, name: "Material-UI" },
+      { logo: nextLogo, name: "NEXT.js" },
+      { logo: bootstrapLogo, name: "Bootstrap" },
+      { logo: tailwindLogo, name: "TailwindCSS" },
+      { logo: muiLogo, name: "Material-UI" },
+      { logo: reduxLogo, name: "Redux" },
     ],
   },
   {
-    category: "Technical Tools",
+    category: "Platforms",
     items: [
-      { logo: Figmalogo, name: "Figma" },
-      { logo: VSCodeLogo, name: "VS Code" },
-      { logo: GitHubLogo, name: "GitHub" },
-      { logo: GitLogo, name: "Git" },
-      { logo: ChatGPTLogo, name: "ChatGPT" },
+      { logo: vscodeLogo, name: "VS Code" },
+      { logo: figmaLogo, name: "Figma" },
+      { logo: githubLogo, name: "GitHub" },
+      { logo: gitLogo, name: "Git" },
+      { logo: vercelLogo, name: "Vercel" },
+      { logo: chatGptLogo, name: "ChatGPT" },
     ],
   },
 ];
@@ -72,7 +77,7 @@ const Experience = () => {
       <h1 className="text-4xl font-bold text-center mb-12">
         My <span className="text-purple">Top Skills</span>
       </h1>
-      <div className="w-full grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 px-4">
+      <div className="w-full grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 px-4 md:px-2">
         {skills.map((skillCategory, index) => (
           <Button
             key={index}
@@ -87,20 +92,20 @@ const Experience = () => {
           >
             <div className="flex flex-col p-6 gap-6">
               <div className="text-left">
-                <h3 className="text-xl font-bold text-white mb-4">
+                <h3 className="text-xl font-bold text-white">
                   {skillCategory.category}
                 </h3>
-                <div className="flex flex-wrap gap-4 mt-2">
+                <div className="flex flex-wrap gap-4 mt-4">
                   {skillCategory.items.map((item, idx) => (
                     <div
                       key={idx}
-                      className="flex flex-col items-center p-3 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                      className="flex flex-col items-center justify-between p-3 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
                     >
                       <Image
                         src={item.logo}
                         alt={item.name}
-                        width={32}
                         height={32}
+                        style={{ height: 32, width: "auto" }}
                         className="mb-2"
                       />
                       <p className="text-gray-800 dark:text-white font-medium">

@@ -1,15 +1,20 @@
-import React, { useEffect } from "react";
-import { FaLocationArrow } from "react-icons/fa";
-import { Spotlight } from "./ui/Spotlight";
-import "./style.css";
-import Typed from "typed.js";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import Link from "next/link";
 import Image from "next/image";
-import { FaLink } from "react-icons/fa";
-import avatar from "../public/personal/avatar-Ninja1.jpg";
+import { useEffect } from "react";
+import {
+  FaLocationArrow,
+  FaLinkedin,
+  FaGithub,
+  FaSquareXTwitter,
+  FaLink,
+} from "react-icons/fa6";
+
+import { Spotlight } from "./ui/Spotlight";
+import avatar from "../public/personal/avatar-1.png";
 import { devil, devilS } from "@/data";
+
+import Typed from "typed.js";
+import "./style.css";
 
 const Grid = () => {
   useEffect(() => {
@@ -19,7 +24,6 @@ const Grid = () => {
         "Backend Developer",
         "Web Developer",
         "UI/UX Designer",
-        "Mobile App Developer",
       ],
       typeSpeed: 100,
       backSpeed: 100,
@@ -64,7 +68,7 @@ const Grid = () => {
             <span className="text-green-500 text-lg border-2 border-spacing-3 border-red-500 rounded-lg">
               {devilS},
             </span>{" "}
-            Experienced front-end developer with over 9 years of expertise in
+            Experienced full-stack developer with 6+ years of expertise in
             building dynamic, responsive, and user-friendly web applications
             using React.js, HTML, CSS, and modern JavaScript frameworks.
             Proficient in both front-end and back-end technologies, offering a
@@ -72,51 +76,39 @@ const Grid = () => {
           </p>
 
           <div className="social-media">
-            <a
-              href="https://www.linkedin.com/in/"
-              target="blank"
-              // style={{ "--i": 7 }}
-              rel="noopener noreferrer"
-            >
+            <Link href="www.linkedin.com/in/aleksey-mosyaev-b74459313/">
               <FaLinkedin />
-            </a>
-            <a
-              href="https://github.com/johndor917/"
-              target="blank"
-              // style={{ "--i": 8 }}
-              rel="noopener noreferrer"
-            >
+            </Link>
+            <Link href="https://github.com/black-2U/">
               <FaGithub />
-            </a>
-            <a
+            </Link>
+
+            {/* Gmail, Telegram */}
+
+            {/* <Link
               href="https://x.com/"
               target="blank"
               // style={{ "--i": 9 }}
               rel="noopener noreferrer"
             >
               <FaSquareXTwitter />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://linktr.ee/"
               target="blank"
               // style={{ "--i": 10 }}
               rel="noopener noreferrer"
             >
               <FaLink />
-            </a>
+            </Link> */}
           </div>
-          <a
-            href="/resume.pdf"
-            className="btn"
-            download
-            rel="noopener noreferrer"
-          >
+          <a href="/BlackW(resume).pdf" className="btn" download>
             Download Resume
           </a>
         </div>
 
         <div className="home-image mt-3 md:mt-0">
-          <Image src={avatar} alt="Hero Image" />
+          <Image src={avatar} alt="Hero Image" className="blur-0" />
         </div>
       </section>
     </div>
