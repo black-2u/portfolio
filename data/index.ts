@@ -11,18 +11,18 @@ export const devilL = "Black Wang";
 export const devil = "Black W.";
 export const devilS = "Black";
 
-export const gridItems = [
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
-];
+// export const gridItems = [
+//   {
+//     id: 6,
+//     title: "Do you want to start a project together?",
+//     description: "",
+//     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+//     imgClassName: "",
+//     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+//     img: "",
+//     spareImg: "",
+//   },
+// ];
 
 export const projects = [
   {
@@ -38,7 +38,7 @@ export const projects = [
       "/icons/typescript.svg",
     ],
     link: "https://www.wellcorner.com/",
-    toptext: "HealthCare",
+    toptext: "WellCorner - HealthCare",
   },
   {
     id: 2,
@@ -53,11 +53,11 @@ export const projects = [
       "/icons/typescript.svg",
     ],
     link: "https://livefeather.com/",
-    toptext: "Rental Website",
+    toptext: "Feather - Rental Website",
   },
   {
     id: 3,
-    title: "Mymories -Sharing Images Without Losing Data",
+    title: "Mymories - Sharing Images Without Losing Data",
     des: "A service to share images easily with multiple people at an event without losing data, such as a party, wedding, or holiday. Users can also display live images on a screen. I conceived, designed, and developed the idea from scratch, including the React Native application, the React web front end, and the back end hosted via google cloud functions.",
     img: "/projects/mymories-landing.png",
     // techs: react, next, tailwind, ts, cloud
@@ -81,7 +81,7 @@ export const projects = [
       "/icons/bootstrap.png",
       "/icons/redux.png",
     ],
-    link: "https://www.greencarreports.com/news/1128304_ford-mustang-mach-e",
+    link: "https://www.greencarreports.com/news/buying-guides",
     toptext: "E-commerce Website",
   },
 ];

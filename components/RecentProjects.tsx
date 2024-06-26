@@ -15,7 +15,7 @@ const RecentProjects = () => {
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw] project-card"
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[100vw] project-card"
             key={item.id}
           >
             <a
@@ -31,8 +31,15 @@ const RecentProjects = () => {
                   <Image
                     src={bgImg}
                     alt="bgimg"
-                    layout="fill"
-                    objectFit="cover"
+                    // layout="fill"
+                    // objectFit="cover"
+                    sizes="100vw"
+                    className="w-1000% h-auto"
+                    // style={{
+                    //   width: "100%",
+                    //   height: "auto",
+                    // }}
+                    priority
                   />
                 </div>
                 <Image
@@ -44,7 +51,7 @@ const RecentProjects = () => {
                 />
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h1 className="font-bold md:text-md text-base line-clamp-1">
                 {item.title}
               </h1>
 

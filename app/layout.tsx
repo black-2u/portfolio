@@ -8,9 +8,13 @@ import { devil } from "@/data";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  // metadataBase: new URL("https://acme.com"),
   title: `${devil}'s Portfolio | Full-stack developer`,
-  description: "Full-stack Mastery Portfolio",
+  description: `Full-stack Mastery Portfolio of ${devil}`,
+  authors: [{ name: devil }],
+  creator: devil,
   generator: "Next.js",
+  publisher: devil,
   applicationName: "Portfolio",
   referrer: "origin-when-cross-origin",
   keywords: [
@@ -33,13 +37,7 @@ export const metadata: Metadata = {
     "sql",
     devil,
   ],
-  authors: [{ name: devil }],
-  creator: devil,
-  openGraph: {
-    images: "/og-image.png",
-    title: `${devil}'s Portfolio | Full-stack developer`,
-    description: "Full-stack Mastery Portfolio",
-  },
+
   // alternates: {
   //   canonical: "/",
   //   languages: {
@@ -60,6 +58,23 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.ico",
+  },
+  openGraph: {
+    title: `${devil}'s Portfolio | Full-stack developer`,
+    description: `Full-stack Mastery Portfolio of ${devil}`,
+    images: "/og-image.png",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    title: `${devil}'s Portfolio | Full-stack developer`,
+    description: `Full-stack Mastery Portfolio of ${devil}`,
+    images: "/og-image.png",
+  },
   category: "portfolio",
 };
 
@@ -70,21 +85,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.PNG" sizes="any" />
-        <link
-          rel="icon"
-          href="/icon?<generated>"
-          type="image/<generated>"
-          sizes="<generated>"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="/apple-icon?<generated>"
-          type="image/<generated>"
-          sizes="<generated>"
-        />
-      </head>
+      <head></head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

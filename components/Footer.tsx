@@ -2,15 +2,12 @@ import {
   FaGithub,
   FaLinkedin,
   FaLocationArrow,
-  FaSkype,
   FaTelegram,
 } from "react-icons/fa6";
 import Link from "next/link";
-import Image from "next/image"; // Import the Image component from next/image
-import { devil, socialMedia } from "@/data";
+import Image from "next/image";
+import { devil } from "@/data";
 import MagicButton from "./MagicButton";
-import { gridItems } from "@/data";
-import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
 const Footer = () => {
   return (
@@ -20,9 +17,9 @@ const Footer = () => {
         <Image
           src="/footer-grid.svg"
           alt="grid"
-          layout="fill" // Use layout fill to ensure the image covers its container
-          objectFit="cover" // Adjust object-fit to cover the container
-          className="opacity-50"
+          fill
+          sizes="100vw"
+          className="opacity-50 h-auto object-cover"
         />
       </div>
 
@@ -32,8 +29,8 @@ const Footer = () => {
           presence to the next level?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          Reach out to me now and let&apos;s discuss how I can help you achieve
+          your goals.
         </p>
 
         <MagicButton

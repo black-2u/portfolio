@@ -1,9 +1,7 @@
 "use client";
 
 import React from "react";
-import { gridItems } from "@/data";
-import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
-import { companies, testimonials } from "@/data";
+import { testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
 
 const Clients = () => {

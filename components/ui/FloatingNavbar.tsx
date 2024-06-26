@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -8,12 +8,15 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import { Url } from "url";
 
 export const FloatingNav = ({
+  logo,
   navItems,
   className,
 }: {
+  logo: StaticImageData;
   navItems: {
     name: string;
     link: string;
@@ -73,7 +76,7 @@ export const FloatingNav = ({
         }}
       >
         <div className="logo -my-10 ">
-          <Image src="/logo.png" alt="logo" width={50} height={50} />
+          <Image src={logo} alt="logo" width={50} height={50} />
         </div>
         <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-5">
           {navItems.map((navItem: any, idx: number) => (

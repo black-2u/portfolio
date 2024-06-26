@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { testimonials } from "@/data";
+import Image from "next/image";
 
 export const InfiniteMovingCards = ({
   items,
@@ -109,9 +110,11 @@ export const InfiniteMovingCards = ({
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <div className="me-3">
-                  <img
+                  <Image
                     src={item.imgURL}
-                    alt="profile"
+                    alt={item.title + "-" + item.name}
+                    width={10}
+                    height={10}
                     className="h-10 w-10 rounded-full object-cover"
                   />
                 </div>
